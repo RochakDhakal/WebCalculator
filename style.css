@@ -1,0 +1,80 @@
+body
+{
+    background: linear-gradient(to top right, green, blue, rgb(0, 213, 255));
+}
+.container 
+/* main calculator box */
+{
+    background-color: gray;
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 0px gray;
+}
+#display
+/* for displaying the numbers */
+{
+    text-align: right;
+    height: 90px;
+    line-height: 90px;
+    padding: 16px 8px;
+    font-size: 50px;
+    border: .5px solid white;
+    background-color: aqua;
+}
+.buttons
+/* whole of the number grid */
+{
+
+    display: grid;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* for applying an extra layer of borders on to the numbers div */
+.buttons > div{
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+.button
+/* individual buttons*/
+{
+    border: .5px solid white;
+    line-height: 100px;
+    text-align:center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.optr
+{
+    background-color: black;
+    color: white;
+}
+#clear
+/* The clear/all clear button */
+{
+    background-color: red;
+    color: wheat;
+}
+#bckspc
+{
+    background-color: greenyellow;
+    color: black;
+}
+#equal
+{
+    background-color: skyblue;
+    color: white;
+}
+.button:hover
+/* hover element on the buttons with class attributes*/
+{
+    background-color: black;
+    color: white;
+    transition: .5s ease-in-out;
+}
+.optr:hover
+{
+    background-color: gray;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
